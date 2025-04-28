@@ -11,7 +11,5 @@ dependencies:
 dev_dependencies:
   lints: ^5.1.1
   test: ^1.25.15
-
 executables:
-  dr_cleaner:
-    script: bin/dr_cleaner.dart
+  dr_cleaner: bin/dr_cleaner.dart
