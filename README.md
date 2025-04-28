@@ -32,8 +32,9 @@ dart run bin/dr_cleaner.dart <path_to_your_flutter_projects> [--force]
 ## Example
 
 To clean the build folders from all Flutter projects located in C:/Users/yourname/FlutterProjects, run:
-
+```bash
 dart run bin/dr_cleaner.dart C:/Users/yourname/FlutterProjects --force
+```
 
 If you don't use the --force flag, the tool will ask for your confirmation before deleting any files.
 How It Works
