@@ -31,35 +31,46 @@ dart run bin/fpc.dart <path_to_your_flutter_projects> [--force]
 --force: Use this flag to force the deletion without any confirmation prompts.
 ```
 
-## To run this command globally add  your dart cache folder  to path 
-  ``` C:\Users\YourUserName\AppData\Local\Pub\Cache\bin ``` or your pub path
-
-``` bash 
-   dart pub global activate --source=path .
-``` 
-✅  To check if it's working 
-
-``` where fpc ```
-If it shows something like:
-
-``` C:\Users\YourUserName\AppData\Local\Pub\Cache\bin\fpc.bat ```
-Then you're good to go!
 
 
 ## Example
 
 To clean the build folders from all Flutter projects located in C:/Users/yourname/FlutterProjects, run:
 
+``` bash 
 dart run bin/fpc.dart C:/Users/yourname/FlutterProjects --force
+```
 
 If you don't use the --force flag, the tool will ask for your confirmation before deleting any files.
 How It Works
 
-    The tool will recursively search for any build folder inside the specified path.
+ The tool will recursively search for any build folder inside the specified path.
 
-    Once it finds the build directories, it will delete them and show the progress.
+ Once it finds the build directories, it will delete them and show the progress.
 
-    After deleting, it will show the amount of disk space that was freed.
+ After deleting, it will show the amount of disk space that was freed.
+
+## To run this command globally add  your dart cache folder to path
+``` C:\Users\YourUserName\AppData\Local\Pub\Cache\bin ``` or your pub path in Environment Variables
+
+**THEN** 
+
+``` bash 
+   dart pub global activate --source=path .
+``` 
+✅  **To check if it's working**
+
+  ``` bash
+     where fpc
+```
+
+**If it shows something like:**
+
+``` C:\Users\YourUserName\AppData\Local\Pub\Cache\bin\fpc.bat ```
+
+**Then you're good to go!**
+
+
 
 ## License
 
