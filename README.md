@@ -24,16 +24,16 @@
 To run the dr_cleaner CLI tool, use the following command in your terminal:
 
 ```bash
-dart run bin/dr_cleaner.dart <path_to_your_flutter_projects> [--force]
+dart run bin/fpc.dart <path_to_your_flutter_projects> [--force]
 ```
 <path_to_your_flutter_projects>: The path to your Flutter projects directory where you want to search for build folders.
---force: Use this flag to force the deletion without any confirmation prompts.
-
+--force: Use this flag to force the deletion without any confirmation prompts
+.
 ## Example
 
 To clean the build folders from all Flutter projects located in C:/Users/yourname/FlutterProjects, run:
 ```bash
-dart run bin/dr_cleaner.dart C:/Users/yourname/FlutterProjects --force
+dart run bin/fpc.dart C:/Users/yourname/FlutterProjects --force
 ```
 
 If you don't use the --force flag, the tool will ask for your confirmation before deleting any files.

@@ -6,12 +6,12 @@
       <excludeFolder url="file://$MODULE_DIR$/.dart_tool" />
       <excludeFolder url="file://$MODULE_DIR$/.pub" />
       <excludeFolder url="file://$MODULE_DIR$/build" />
-      <excludeFolder url="file://$MODULE_DIR$/dr_cleaner/.dart_tool" />
-      <excludeFolder url="file://$MODULE_DIR$/dr_cleaner/.pub" />
-      <excludeFolder url="file://$MODULE_DIR$/dr_cleaner/build" />
       <excludeFolder url="file://$MODULE_DIR$/fps/.dart_tool" />
       <excludeFolder url="file://$MODULE_DIR$/fps/.pub" />
       <excludeFolder url="file://$MODULE_DIR$/fps/build" />
+      <excludeFolder url="file://$MODULE_DIR$/fpc/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/fpc/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/fpc/build" />
     </content>
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="Dart SDK" level="project" />
