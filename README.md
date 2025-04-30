@@ -50,15 +50,53 @@ How It Works
 
  After deleting, it will show the amount of disk space that was freed.
 
-## To run this command globally add  your dart cache folder to path
-``` C:\Users\YourUserName\AppData\Local\Pub\Cache\bin ``` or your pub path in Environment Variables
+## Activate the Package Globally 
 
-**THEN** 
+If your project is located at C:\Users\yourname\StudioProjects\fpc, open your terminal and run:
 
 ``` bash 
-   dart pub global activate --source=path .
-``` 
-✅  **To check if it's working**
+dart pub global activate --source path C:\yourname\StudioProjects\fpc
+```
+
+
+This command activates the package globally from the specified local path.
+
+
+**To run fpc from any location in your terminal, ensure that Dart's pub cache bin directory is in your system's PATH.**
+
+**✅ Step 1: Add Dart's Pub Cache to Your System PATH**
+
+
+For Windows, the pub cache bin directory is typically located at:
+
+``` %LOCALAPPDATA%\Pub\Cache\bin ```
+
+**To add this directory to your PATH:**
+
+Press Win + R, type sysdm.cpl, and press Enter.
+
+ In the System Properties window, go to the Advanced tab and click on Environment Variables.
+
+ Under System variables, find and select the Path variable, then click Edit.
+
+ Click New and add the path:
+
+ %LOCALAPPDATA%\Pub\Cache\bin
+
+ Click OK on all open dialogs to apply the changes.
+
+After updating the PATH, you might need to restart your terminal or computer for the changes to take effect._
+
+
+**✅ Step 2: Verify the Installation**
+
+To confirm that fpc is installed and accessible globally, open a new terminal window and run:
+
+``` bash
+  fpc --help 
+  ```
+
+  **Or**
 
   ``` bash
      where fpc
